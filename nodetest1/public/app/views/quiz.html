@@ -1,0 +1,94 @@
+<form class="form-horizontal">
+            
+            <table class="table table-hover table-striped table-condensed table-bordered"  >
+                <tr><td><div>Welcome <b>{{ displayloginuser }}</b> !!</div></td>
+                    <td><button class="btn btn-danger" ng-click="logout()">Logout</button></td>
+                </tr>
+            </table>                          
+
+            <p><b>Please answer all questions.</b></p>                               
+            <hr/>  
+           <p>1) Which is not an advantage of using a closure?</p>                               
+                    <input type="radio" ng-model="questone.value" value="a. Prevent pollution of global scope" />&nbsp;&nbsp;&nbsp;a. Prevent pollution of global scope
+                    <br />
+                    <input type="radio" ng-model="questone.value" value="b. Encapsulation" />&nbsp;&nbsp;&nbsp;b. Encapsulation
+                    <br />
+                    <input type="radio" ng-model="questone.value" value="c. Private properties and methods" />&nbsp;&nbsp;&nbsp;c. Private properties and methods
+                    <br />    
+                    <input type="radio" ng-model="questone.value" value="d. Allow conditional use of strict mode" />&nbsp;&nbsp;&nbsp;d. Allow conditional use of strict mode
+                    <br />
+                    <br />  
+                    <hr/>  
+                    
+                    
+           <p>2) To create a columned list of twoline email subjects and dates for a masterdetail view, which are the most semantically correct?</p>                               
+                    <input type="radio" ng-model="questtwo.value" value="a. <div>+<span>" />&nbsp;&nbsp;&nbsp;a. div+span
+                    <br />
+                    
+                    <input type="radio" ng-model="questtwo.value" value="b. <tr>+<td>" />&nbsp;&nbsp;&nbsp;b. tr+td
+                    <br />
+                    
+                    <input type="radio" ng-model="questtwo.value" value="c. <ul>+<li>" />&nbsp;&nbsp;&nbsp;c. ul+li
+                    <br />    
+                    
+                    <input type="radio" ng-model="questtwo.value" value="d. <p>+<br>" />&nbsp;&nbsp;&nbsp;d. p+br
+                    <br />
+                    <input type="radio" ng-model="questtwo.value" value="e. none of these" />&nbsp;&nbsp;&nbsp;e. none of these
+                    <br />
+                    <input type="radio" ng-model="questtwo.value" value="f. all of these" />&nbsp;&nbsp;&nbsp;f. all of these
+                    <br />
+                    <br />   
+                    <hr/>
+
+            <p>3) To pass an array of strings to a function, you should not use...</p>                               
+                    <input type="radio" ng-model="questthree.value" value="a. fn.apply(this, stringsArray)" />&nbsp;&nbsp;&nbsp;a. fn.apply(this, stringsArray)
+                    <br />
+                    
+                    <input type="radio" ng-model="questthree.value" value="b. fn.call(this, stringsArray)" />&nbsp;&nbsp;&nbsp;b. fn.call(this, stringsArray)
+                    <br />
+                    
+                    <input type="radio" ng-model="questthree.value" value="c. fn.bind(this, stringsArray)" />&nbsp;&nbsp;&nbsp;c. fn.bind(this, stringsArray)                                     
+                    
+                    <br />
+                    <br />  
+                    <hr/>
+
+            <p>5) Given div id=”outer” div class=”inner” div div, which of these two is the most performant way to select the inner div?</p>                               
+                    <input type="radio" ng-model="questfive.value" value='a. getElementById("outer").children[0]' />&nbsp;&nbsp;&nbsp;a. getElementById("outer").children[0]
+                    <br />                    
+                    <input type="radio" ng-model="questfive.value" value='b. getElementsByClassName("inner")[0]' />&nbsp;&nbsp;&nbsp;b. getElementsByClassName("inner")[0]             
+                    <br />
+                    <br />
+                    <hr/>
+
+                    <p>angular.module(‘myModule’,[]).service(‘myService’,(function() {</p>                               
+                        <p>var message = “Message one!”</p>                               
+                        <p>var getMessage = function() {</p>
+                            <p> return this.message</p>
+                         <p>}</p>   
+                         <p>this.message = “Message two!”</p>   
+                         <p>this.getMessage = function() { return message }</p>   
+                         <p>return function() {</p>   
+                         <p>return {</p>   
+                         <p>getMessage: getMessage,</p> 
+                          <p>message: “Message three!”</p> 
+                           <p>}</p> 
+                           <p>}</p> 
+                           <p>})())</p> 
+                      <br />      
+                    <p>6) Which message will be returned by injecting this service and executing “myService.getMessage()”</p>      
+                    <input type="radio" ng-model="questsix.value" value='a. 1' />&nbsp;&nbsp;&nbsp;a. 1
+                    <br />                    
+                    <input type="radio" ng-model="questsix.value" value='b. 2' />&nbsp;&nbsp;&nbsp;b. 2             
+                    <br />
+                    <input type="radio" ng-model="questsix.value" value='c. 3' />&nbsp;&nbsp;&nbsp;c. 3             
+                    <br />
+                    <br />    
+
+                    <button class="btn btn-primary" ng-click="clickContinue()">Continue</button> 
+                    <button class="btn btn-danger" ng-click="clickCancel()">Cancel</button> 
+
+      
+      
+    </form>
+    
